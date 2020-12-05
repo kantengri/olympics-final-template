@@ -1420,8 +1420,8 @@ class NetTeacher:
         self.last_blob_x = xc
 
         a = np.array([xc, yc], dtype=float)
-        c = np.array([obs.shape[1]/8, 0], dtype=float)
-        b = np.array([obs.shape[1]/8, obs.shape[0]], dtype=float)
+        c = np.array([obs.shape[1]/2, 0], dtype=float)
+        b = np.array([obs.shape[1]/2, obs.shape[0]], dtype=float)
         ba = a - b
         bc = c - b
         signed_angle = angle(ba, bc)
